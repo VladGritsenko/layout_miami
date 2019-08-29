@@ -1,0 +1,55 @@
+.galery {
+  position: relative;
+  padding-top: 115px;
+  padding-bottom: 110px;
+  background-color: $c-main-grey;
+}
+
+.apart {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    .apart__photo {
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 260px;
+    }
+  }
+
+  &__title {
+    padding: 12px 0 27px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+  }
+   
+}
+
+.little-photo {
+  width: 32%;
+}
+
+.big-photo {
+  width: 66%;
+}
+
+.medium-photo {
+  width: 49%;
+}
+
+.button {
+  display: block;
+  height: 55px;
+  width: 192px;
+  margin: 0 auto;
+
+  color: $c-text-white;
+  background-color: $c-button;
+  border: none;
+  text-transform: uppercase;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+}

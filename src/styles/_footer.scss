@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 500px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  background-image: url("../images/footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__copy {
+    position: absolute;
+    bottom: 55px;
+    right: 0;
+    left: 0;
+
+    font-size: 16px;
+    color: $c-text-white;
+
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
