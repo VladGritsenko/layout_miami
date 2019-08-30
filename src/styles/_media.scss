@@ -1,25 +1,19 @@
 @media screen and (max-width: 500px) {
   .container {
     padding: 0 10px;
-  }
-
-  .best ol {
-    padding-top: 20px;
   } 
 
   .header {
-    position: relative;
-
     &__phone a {
       position: absolute;
-      top: 540px;
+      bottom: 60px;
       left: 50%;
       transform: translate(-50%, 0);
     }
 
     &__call a {
       position: absolute;
-      top: 500px;
+      bottom: 100px;
       left: 50%;
       transform: translate(-50%, 0);
     }
@@ -39,37 +33,51 @@
 		bottom: 360px;
 
 		&-list {
-		flex-direction: column;
+		  flex-direction: column;
 		}
 	}
 
 	.apart {
-    	.apart__photo {
-      		height: 200px;
-    	}
+    .apart__photo {
+      height: 200px;
+    }
+  }
+
+  .testimonials {
+  	&__container {
+  		flex-direction: column;
+  		align-items: center;
   	}
 
-  	.testimonials {
-  		&__container {
-  			flex-direction: column;
-  			align-items: center;
-  		}
-
-  		&__person {
-  			padding-bottom: 50px;
-  		}
+  	&__person {
+  		padding-bottom: 50px;
   	}
 
-  	.contact {
-  		.container {
-  			flex-direction: column;
-  			align-items: center;
-  		}
+    & p {
+      margin-top: 20px;
+    }
+  }
+    
+  .best {
+    padding-top: 40px;
+    padding-bottom: 80px;
 
-      address {
-        margin-bottom: 40px;
-      }
-  	}
+    &__text ol {
+      padding: 10px 0;
+    }
+  }
+
+  .consultation {
+    padding: 80px 0;
+
+    & p {
+      padding: 20px 0;
+    }
+  }
+
+  .contact {
+    padding: 90px 0;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -83,20 +91,30 @@
 		}
 
 		&__rearly {
-			padding-bottom: 30px;
+			padding-bottom: 20px;
 		}
 	}
 
 	.consultation {
-  		padding: 100px 0;
+  	padding: 100px 0;
 
-  		.container {
-  			flex-direction: column;
-  			align-items: center;
+  	.container {
+  		flex-direction: column;
+  		align-items: center;
 
-  			& p {
-  				padding-bottom: 40px;
-  			}
+  		& p {
+  			padding-bottom: 40px;
   		}
   	}
+  }
+
+  .contact {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    address {
+      margin-bottom: 40px;
+    }
+  }
 }
