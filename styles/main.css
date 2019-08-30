@@ -544,22 +544,18 @@ span {
 @media screen and (max-width: 500px) {
   .container {
     padding: 0 10px; }
-  .best ol {
-    padding-top: 20px; }
-  .header {
-    position: relative; }
-    .header__phone a {
-      position: absolute;
-      top: 540px;
-      left: 50%;
-      -webkit-transform: translate(-50%, 0);
-              transform: translate(-50%, 0); }
-    .header__call a {
-      position: absolute;
-      top: 500px;
-      left: 50%;
-      -webkit-transform: translate(-50%, 0);
-              transform: translate(-50%, 0); }
+  .header__phone a {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+  .header__call a {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
   .navigation {
     bottom: 360px; }
   .apart__photo {
@@ -585,16 +581,19 @@ span {
             align-items: center; }
   .testimonials__person {
     padding-bottom: 50px; }
-  .contact .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .contact address {
-    margin-bottom: 40px; } }
+  .testimonials p {
+    margin-top: 20px; }
+  .best {
+    padding-top: 40px;
+    padding-bottom: 80px; }
+    .best__text ol {
+      padding: 10px 0; }
+  .consultation {
+    padding: 80px 0; }
+    .consultation p {
+      padding: 20px 0; }
+  .contact {
+    padding: 90px 0; } }
 
 @media screen and (max-width: 800px) {
   .best {
@@ -609,7 +608,7 @@ span {
           -ms-flex-align: center;
               align-items: center; }
     .best__rearly {
-      padding-bottom: 30px; }
+      padding-bottom: 20px; }
   .consultation {
     padding: 100px 0; }
     .consultation .container {
@@ -621,6 +620,16 @@ span {
           -ms-flex-align: center;
               align-items: center; }
       .consultation .container p {
-        padding-bottom: 40px; } }
+        padding-bottom: 40px; }
+  .contact .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .contact address {
+    margin-bottom: 40px; } }
 
 /*# sourceMappingURL=main.css.map */
