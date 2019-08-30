@@ -1,6 +1,42 @@
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .best ol {
+    padding-top: 20px;
+  } 
+
+  .header {
+    position: relative;
+
+    &__phone a {
+      position: absolute;
+      top: 540px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    &__call a {
+      position: absolute;
+      top: 500px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  .navigation {
+    bottom: 360px;
+  }
+
+  .apart__photo {
+    height: 100px;
+  }
+}
+
 @media screen and (max-width: 640px) {
 	.navigation {
-		bottom: 300px;
+		bottom: 360px;
 
 		&-list {
 		flex-direction: column;
@@ -29,6 +65,10 @@
   			flex-direction: column;
   			align-items: center;
   		}
+
+      address {
+        margin-bottom: 40px;
+      }
   	}
 }
 
@@ -43,7 +83,7 @@
 		}
 
 		&__rearly {
-			padding-bottom: 50px;
+			padding-bottom: 30px;
 		}
 	}
 

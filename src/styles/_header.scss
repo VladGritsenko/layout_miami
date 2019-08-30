@@ -33,12 +33,12 @@
     border-bottom: 1px dashed #606060;
     transition: color 0.2s ease-in-out;
 
-    &:hover {
+    a:hover {
       color: grey;
       border: none;
     }
 
-    &:active {
+    a:active {
         color: darken(grey, 20%);
       }
   }
@@ -52,11 +52,11 @@
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 
-    &:hover {
+    a:hover {
       color: grey;
     }
 
-    &:active {
+    a:active {
         color: darken(grey, 20%);
       }
   }

@@ -36,7 +36,8 @@ span {
   padding-bottom: 20px;
   font-style: normal;
   font-weight: 300;
-  font-size: 48px; }
+  font-size: 48px;
+  text-transform: uppercase; }
   .section__title:before, .section__title:after {
     display: block;
     position: absolute;
@@ -136,10 +137,10 @@ span {
     border-bottom: 1px dashed #606060;
     -webkit-transition: color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out; }
-    .header__call a:hover {
+    .header__call a a:hover {
       color: grey;
       border: none; }
-    .header__call a:active {
+    .header__call a a:active {
       color: #4d4d4d; }
   .header__logo {
     margin-top: -33px; }
@@ -148,9 +149,9 @@ span {
     text-decoration: none;
     -webkit-transition: color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out; }
-    .header__phone a:hover {
+    .header__phone a a:hover {
       color: grey; }
-    .header__phone a:active {
+    .header__phone a a:active {
       color: #4d4d4d; }
 
 .navigation {
@@ -344,7 +345,10 @@ span {
     border: none;
     font-size: 14px;
     line-height: 36px;
-    text-indent: 15px;
+    padding-left: 15px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-color: #eee; }
     .section__field .input:hover {
       -webkit-box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
@@ -359,7 +363,6 @@ span {
       font-weight: 500;
       font-size: 14px;
       line-height: 36px;
-      text-indent: 0;
       color: #6c6c6c;
       text-transform: uppercase;
       text-align: center; }
@@ -367,7 +370,6 @@ span {
       font-weight: 500;
       font-size: 14px;
       line-height: 36px;
-      text-indent: 0;
       color: #6c6c6c;
       text-transform: uppercase;
       text-align: center; }
@@ -375,7 +377,6 @@ span {
       font-weight: 500;
       font-size: 14px;
       line-height: 36px;
-      text-indent: 0;
       color: #6c6c6c;
       text-transform: uppercase;
       text-align: center; }
@@ -383,7 +384,6 @@ span {
       font-weight: 500;
       font-size: 14px;
       line-height: 36px;
-      text-indent: 0;
       color: #6c6c6c;
       text-transform: uppercase;
       text-align: center; }
@@ -391,7 +391,6 @@ span {
       font-weight: 500;
       font-size: 14px;
       line-height: 36px;
-      text-indent: 0;
       color: #6c6c6c;
       text-transform: uppercase;
       text-align: center; }
@@ -542,9 +541,33 @@ span {
     font-size: 16px;
     line-height: 22px; }
 
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 10px; }
+  .best ol {
+    padding-top: 20px; }
+  .header {
+    position: relative; }
+    .header__phone a {
+      position: absolute;
+      top: 540px;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); }
+    .header__call a {
+      position: absolute;
+      top: 500px;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); }
+  .navigation {
+    bottom: 360px; }
+  .apart__photo {
+    height: 100px; } }
+
 @media screen and (max-width: 640px) {
   .navigation {
-    bottom: 300px; }
+    bottom: 360px; }
     .navigation-list {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -569,7 +592,9 @@ span {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center; }
+  .contact address {
+    margin-bottom: 40px; } }
 
 @media screen and (max-width: 800px) {
   .best {
@@ -584,7 +609,7 @@ span {
           -ms-flex-align: center;
               align-items: center; }
     .best__rearly {
-      padding-bottom: 50px; }
+      padding-bottom: 30px; }
   .consultation {
     padding: 100px 0; }
     .consultation .container {
