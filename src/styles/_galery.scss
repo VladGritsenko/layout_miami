@@ -52,4 +52,14 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 36px;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: darken($c-button, 10%);
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: darken($c-button, 20%);
+  }
 }

@@ -26,12 +26,39 @@
   padding-top: 88px;
   color: $c-text-white;
 
-  &__call {
+  &__call a {
     text-transform: uppercase;
+    color: $c-text-white;
+    text-decoration: none;
+    border-bottom: 1px dashed #606060;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: grey;
+      border: none;
+    }
+
+    &:active {
+        color: darken(grey, 20%);
+      }
   }
 
   &__logo {
     margin-top: -33px;
+  }
+
+  &__phone a {
+    color: $c-text-white;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: grey;
+    }
+
+    &:active {
+        color: darken(grey, 20%);
+      }
   }
 }
 
@@ -57,10 +84,19 @@
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
-      line-height: 36px;
+      line-height: 40px;
       text-decoration: none;
       text-transform: uppercase;
       color: $c-text-white;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: grey;
+      }
+
+      &:active {
+        color: darken(grey, 20%);
+      }
     }
   }
 }
