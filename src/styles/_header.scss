@@ -1,0 +1,102 @@
+.hero {
+  background-image: url("../images/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  .container {
+    position: relative;
+    padding-top: 0;
+
+    height: 100vh;
+    min-height: 500px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+
+  padding-top: 88px;
+  color: $c-text-white;
+
+  &__call a {
+    text-transform: uppercase;
+    color: $c-text-white;
+    text-decoration: none;
+    border-bottom: 1px dashed #606060;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: grey;
+      border: none;
+    }
+
+    &:active {
+        color: darken(grey, 20%);
+      }
+  }
+
+  &__logo {
+    margin-top: -33px;
+  }
+
+  &__phone a {
+    color: $c-text-white;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: grey;
+    }
+
+    &:active {
+        color: darken(grey, 20%);
+      }
+  }
+}
+
+.navigation {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 20px;
+  box-sizing: padding-box;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  height: 36px;
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    &__link {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 40px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $c-text-white;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: grey;
+      }
+
+      &:active {
+        color: darken(grey, 20%);
+      }
+    }
+  }
+}

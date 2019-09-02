@@ -1,0 +1,50 @@
+.contact {
+  padding-top: 150px;
+  padding-bottom: 100px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    p,
+    address {
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.textarea {
+  height: 169px;
+  width: 385px;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+  text-indent: 15px;
+  font-size: 14px;
+  background-color: $c-main-grey;
+
+  &:hover {
+    box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
+  }
+
+  &:focus {
+    background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+    outline: 1px solid $c-text-blue;
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    color: lighten(#393939, 20%);
+    padding: 0;
+    text-indent: 0;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
