@@ -22,8 +22,9 @@ strong {
   font-weight: 500;
 }
 
-span {
+span a {
   color: $c-text-blue;
+  text-decoration: none;
 }
 
 .section {
